@@ -1,0 +1,34 @@
+{
+  "name": "supersupermarket.online",
+  "version": "1.0.0",
+  "description": "Website for Super Supermarket",
+  "repository": "git@github.com:northplay/supersupermarket.online.git",
+  "author": "Kristian Andersen <kristian@northplay.co>",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "next build"
+  },
+  "engines": {
+    "node": "11.x"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^7.0.2",
+    "next-images": "^1.0.1",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.1",
+    "styled-reset": "^1.6.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-inline-react-svg": "^1.0.1",
+    "babel-plugin-styled-components": "^1.8.0"
+  }
+}
