@@ -68,7 +68,7 @@ const Description = styled.div`
   margin-top: 15px;
 `;
 
-const SignUpForm = styled.div`
+const SignUpForm = styled.form`
   align-items: center;
   flex: 1 1 40%;
   display: flex;
@@ -88,8 +88,7 @@ const Email = styled.input`
   background-color: #fff;
   border: 2px solid #ffea37;
   box-shadow: 0px 0px 20px 5px rgba(255, 234, 55, 0.4);
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-radius: 15px;
   color: #2c47ad;
   font-weight: 500;
   font-size: 18px;
@@ -110,13 +109,14 @@ const Submit = styled.button`
   appearance: none;
   background-color: #ffea37;
   border: 2px solid #ffea37;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
   box-shadow: 0px 0px 20px 5px rgba(255, 234, 55, 0.4);
   color: #2c47ad;
   font-size: 18px;
   font-weight: 500;
   padding: 15.5px 15px;
+  margin-left: 5px;
+  transition: all 0.15s ease;
 
   @media (max-width: 420px) {
     width: 100px;
@@ -125,6 +125,10 @@ const Submit = styled.button`
   @media (max-width: 320px) {
     width: auto;
     padding: 15.5px 10px;
+  }
+
+  &:hover {
+    transform: scale(1.05, 1.05) translateX(5px);
   }
 `;
 
@@ -185,6 +189,7 @@ class JoinTheClub extends React.Component {
             type="email"
             onChange={this.onEmailChange} />
           <Submit
+            type="submit"
             onClick={this.handleSubmit}
             disabled={isRequesting}>Sign up</Submit>
         </SignUpForm>
