@@ -10,7 +10,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT",
-    "heroku-postbuild": "next build"
+    "heroku-postbuild": "next build",
+    "deploy": "git push origin master && git push web master"
   },
   "engines": {
     "node": "11.x"
