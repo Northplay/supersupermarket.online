@@ -92,7 +92,7 @@ const Index = () => <Page>
       Test
     </Video>
     <Main>
-      <Link href="https://itunes.apple.com/us/app/super-supermarket/id1435484076?ls=1&mt=8&at=1010lwVg&ct=supersupermarket-site">
+      <Link href="https://itunes.apple.com/us/app/super-supermarket/id1435484076?ls=1&mt=8&at=1010lwVg&ct=supersupermarket-site" passHref>
         <IconLink>
           <img src={AppIcon} alt="App Icon"/>
         </IconLink>
@@ -100,7 +100,7 @@ const Index = () => <Page>
       <Description>
         <Color color="green">RACE</Color> through supermarkets! <Color color="yellow">COLLECT</Color> as many groceries as you can! <Color color="red">UPGRADE</Color> your cart and <Color color="blue">WIN</Color> a spot on the local or global shopping list!
       </Description>
-      <Link href="https://itunes.apple.com/us/app/super-supermarket/id1435484076?ls=1&mt=8&at=1010lwVg&ct=supersupermarket-site">
+      <Link href="https://itunes.apple.com/us/app/super-supermarket/id1435484076?ls=1&mt=8&at=1010lwVg&ct=supersupermarket-site" passHref>
         <AppStoreLink>
           <img src={AppStore} alt="Download on the app store"/>
         </AppStoreLink>

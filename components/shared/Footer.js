@@ -87,17 +87,17 @@ const Northplay = styled.a`
 
 const MadeBy = () => <Wrapper>
   <Container>
-    <Link href="https://northplay.co">
+    <Link href="https://northplay.co" passHref>
       <LeftText target="_blank">
         <People>Made by Northplay</People>
       </LeftText>
     </Link>
-    <Link href="https://northplay.co">
+    <Link href="https://northplay.co" passHref>
       <Northplay target="_blank">
         <Logo src={bear} alt="Northplay" />
       </Northplay>
     </Link>
-    <Link href="https://northplay.co">
+    <Link href="https://northplay.co" passHref>
       <Text target="_blank">
         <Location>In Copenhagen</Location>
       </Text>

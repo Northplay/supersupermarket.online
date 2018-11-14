@@ -71,8 +71,8 @@ const StyledLink = styled.a`
   }
 `;
 
-const IconLink = ({ icon, text, url }) => <Link href={url}>
-  <StyledLink>
+const IconLink = ({ icon, text, url }) => <Link href={url} passHref>
+  <StyledLink target="_blank">
     {icon}
     <span>{text}</span>
   </StyledLink>
