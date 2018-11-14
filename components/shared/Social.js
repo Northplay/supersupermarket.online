@@ -24,7 +24,7 @@ const Row = styled.div`
   margin-bottom: 30px;
   width: 100%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1010px) {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -45,8 +45,8 @@ const StyledLink = styled.a`
   padding: 20 10px;
   transition: all 0.15s ease;
 
-  @media (max-width: 720px) {
-    margin: 0 0 10px 0;
+  @media (max-width: 1010px) {
+    margin: 10px;
   }
 
   @media (max-width: 420px) {
