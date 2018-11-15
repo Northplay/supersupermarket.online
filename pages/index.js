@@ -109,10 +109,6 @@ const IconLink = styled.div`
       width: 180px;
     }
   }
-
-  &:hover img {
-    transform: scale(1.05, 1.05);
-  }
 `;
 
 const AppStoreLink = styled.a`
