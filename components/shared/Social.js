@@ -82,16 +82,16 @@ const Social = () => <Container>
   <Row>
     <IconLink
       icon={<Twitter/>}
-      url="https://twitter.com/northplay"
-      text="@northplay" />
+      url="https://twitter.com/heynorthplay"
+      text="@heynorthplay" />
     <IconLink
       icon={<Facebook/>}
       url="https://facebook.com/northplay"
       text="/northplay" />
-    <IconLink
+    {/* <IconLink
       icon={<Box/>}
       url=""
-      text="Press Kit" />
+      text="Press Kit" /> */}
     <IconLink
       icon={<Email/>}
       url="mailto:hey@northplay.co?subject=Super%20Supermarket"

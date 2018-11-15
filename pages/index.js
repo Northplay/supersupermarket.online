@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
+import YouTube from 'react-youtube';
 
 import Page from '../components/shared/Page';
 import Social from '../components/shared/Social';
@@ -32,6 +33,7 @@ const Header = styled.header`
 `;
 
 const Split = styled.section`
+  align-items: center;
   display: flex;
   flex-flow: row nowrap;
 
@@ -55,9 +57,18 @@ const Video = styled.div`
   flex: 0 1 50%;
   justify-content: center;
   padding: 30px;
+  overflow: hidden;
 
   @media (max-width: 930px) {
     flex: 1 0 100%;
+  }
+
+  @media (max-width: 800px) {
+    padding: 30px 0;
+    iframe {
+      height: 592px !important;
+      width: 300px !important;
+    }
   }
 `;
 
@@ -75,6 +86,10 @@ const Main = styled.div`
     ${Description} {
       text-align: center;
     }
+  }
+
+  @media (max-width: 420px) {
+    padding: 30px 0;
   }
 `;
 
@@ -123,7 +138,15 @@ const Index = () => <Page>
   </Header>
   <Split role="main">
     <Video>
-      Test
+      <YouTube
+        videoId="qTKlA_N2bP8"
+        opts={{
+          width: '500',
+          height: '882',
+          modestbranding: '1',
+          controls: '0',
+          showInfo: '0',
+        }} />
     </Video>
     <Main>
       <Link href="https://itunes.apple.com/us/app/super-supermarket/id1435484076?ls=1&mt=8&at=1010lwVg&ct=supersupermarket-site" passHref>
