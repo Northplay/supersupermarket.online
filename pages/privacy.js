@@ -7,7 +7,7 @@ import Page from '../components/shared/Page';
 
 const Article = styled.div`
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    padding: 50px 0;
+    padding: 50px 10px;
     p, li {
         font-size: 14px;
         line-height: 20px;
