@@ -10,6 +10,7 @@ import Footer from '../components/shared/Footer';
 import Logo from '../assets/logo.png';
 import AppIcon from '../assets/app-icon.png';
 import AppStore from '../assets/appstore.png';
+import PlayStore from '../assets/playstore.png';
 
 const Header = styled.header`
   align-items: center;
@@ -93,9 +94,7 @@ const Main = styled.div`
   }
 `;
 
-const IconLink = styled.a`
-  cursor: pointer;
-  text-decoration: none;
+const IconLink = styled.div`
   margin-bottom: 30px;
 
   img {
@@ -122,8 +121,24 @@ const AppStoreLink = styled.a`
   margin-top: 30px;
 
   img {
-    height: 97px;
-    width: 291px;
+    height: 80px;
+    width: 240px;
+    transition: all 0.15s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05, 1.05);
+  }
+`;
+
+const PlayStoreLink = styled.a`
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 30px;
+
+  img {
+    height: 80px;
+    width: 270px;
     transition: all 0.15s ease;
   }
 
@@ -149,11 +164,9 @@ const Index = () => <Page>
         }} />
     </Video>
     <Main>
-      <Link href="https://itunes.apple.com/us/app/super-supermarket/id1435484076?ls=1&mt=8&at=1010lwVg&ct=supersupermarket-site" passHref>
-        <IconLink>
-          <img src={AppIcon} alt="App Icon"/>
-        </IconLink>
-      </Link>
+      <IconLink>
+        <img src={AppIcon} alt="App Icon"/>
+      </IconLink>
       <Description>
         <Color color="green">RACE</Color> through supermarkets! <Color color="yellow">COLLECT</Color> as many groceries as you can! <Color color="red">UPGRADE</Color> your cart and <Color color="blue">WIN</Color> a spot on the local or global shopping list!
       </Description>
@@ -161,6 +174,12 @@ const Index = () => <Page>
         <AppStoreLink>
           <img src={AppStore} alt="Download on the app store"/>
         </AppStoreLink>
+      </Link>
+
+      <Link href="https://play.google.com/store/apps/details?id=co.northplay.SuperSupermarket" passHref>
+        <PlayStoreLink>
+          <img src={PlayStore} alt="Download on Google Play Store"/>
+        </PlayStoreLink>
       </Link>
     </Main>
   </Split>

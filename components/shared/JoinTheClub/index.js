@@ -16,6 +16,8 @@ const Container = styled.div`
   z-index: 10;
   position: relative;
   margin-top: 80px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
 
   @media (max-width: 880px) {
     flex-wrap: wrap;
